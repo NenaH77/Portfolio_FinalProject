@@ -119,6 +119,7 @@ button:focus {
     margin: 0 auto;
 }
 
+/* Home Page */
 .hero,
 .page-banner {
     text-align: center;
@@ -184,6 +185,8 @@ button:focus {
     text-align: center;
 }
 
+/* About Page */
+
 .about-content h2 {
     text-align: left;
     margin-top: 35px;
@@ -193,6 +196,8 @@ button:focus {
 .about-content p {
     margin-bottom: 18px;
 }
+
+/* Skill Section */
 
 .skills-section {
     padding: 55px 0;
@@ -226,6 +231,8 @@ button:focus {
     padding: 30px 0 70px;
     text-align: center;
 }
+
+/* Project Page */
 
 .grid {
     display: grid;
@@ -299,6 +306,8 @@ button:focus {
     opacity: 1;
 }
 
+/* UX Case Study Section */
+
 .ux-section {
     padding: 60px 0 30px;
     text-align: center;
@@ -370,6 +379,8 @@ button:focus {
     transform: scale(1.05);
     filter: brightness(0.82);
 }
+
+/* UX Apps Section */
 
 .case-content {
     max-width: 900px;
@@ -498,6 +509,8 @@ button:focus {
     font-weight: 700;
 }
 
+/* Footer Section */
+
 footer {
     text-align: center;
     padding: 26px;
@@ -505,6 +518,8 @@ footer {
     background: rgba(15, 23, 42, 0.55);
     border-top: 1px solid var(--border);
 }
+
+/* Feature Work Section */
 
 .lightbox {
     position: fixed;
