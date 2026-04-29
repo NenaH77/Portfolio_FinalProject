@@ -56,3 +56,36 @@ document.addEventListener("DOMContentLoaded", function () {
         lightbox.style.display = "none";
     });
 });
+
+const carouselImages = [
+    "images/GroceryApp.png",
+    "images/NewRoots.png"
+];
+
+const carouselImage = document.querySelector(".carousel-image");
+const prevSlide = document.querySelector(".prev-slide");
+const nextSlide = document.querySelector(".next-slide");
+
+let slideIndex = 0;
+
+if (carouselImage && prevSlide && nextSlide) {
+    nextSlide.addEventListener("click", function () {
+        slideIndex++;
+
+        if (slideIndex >= carouselImages.length) {
+            slideIndex = 0;
+        }
+
+        carouselImage.src = carouselImages[slideIndex];
+    });
+
+    prevSlide.addEventListener("click", function () {
+        slideIndex--;
+
+        if (slideIndex < 0) {
+            slideIndex = carouselImages.length - 1;
+        }
+
+        carouselImage.src = carouselImages[slideIndex];
+    });
+}
