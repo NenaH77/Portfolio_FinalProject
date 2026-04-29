@@ -119,7 +119,6 @@ button:focus {
     margin: 0 auto;
 }
 
-/* Home Page */
 .hero,
 .page-banner {
     text-align: center;
@@ -185,8 +184,6 @@ button:focus {
     text-align: center;
 }
 
-/* About Page */
-
 .about-content h2 {
     text-align: left;
     margin-top: 35px;
@@ -197,8 +194,6 @@ button:focus {
     margin-bottom: 18px;
 }
 
-/* Skill Section */
-
 .skills-section {
     padding: 55px 0;
 }
@@ -208,6 +203,13 @@ button:focus {
     grid-template-columns: repeat(3, 1fr);
     gap: 26px;
 }
+
+.skills-grid i {
+    font-size: 2rem;
+    color: var(--sky);
+    margin-bottom: 18px;
+}
+
 
 .skills-grid article {
     background: var(--card);
@@ -231,8 +233,6 @@ button:focus {
     padding: 30px 0 70px;
     text-align: center;
 }
-
-/* Project Page */
 
 .grid {
     display: grid;
@@ -306,8 +306,6 @@ button:focus {
     opacity: 1;
 }
 
-/* UX Case Study Section */
-
 .ux-section {
     padding: 60px 0 30px;
     text-align: center;
@@ -380,15 +378,13 @@ button:focus {
     filter: brightness(0.82);
 }
 
-/* UX Apps Section */
-
 .case-content {
     max-width: 900px;
     line-height: 1.8;
     color: var(--soft);
 }
 
-.case-content img {
+/*.case-content img {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     width: 100%;
     border-radius: 28px;
@@ -399,8 +395,42 @@ button:focus {
 .case-content>img:hover {
     transform: translateY(-6px);
     box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+} */
+
+.case-carousel {
+    position: relative;
+    margin: 0 0 36px;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
+.case-carousel img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(15, 23, 42, 0.75);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.prev-slide {
+    left: 18px;
+}
+
+.next-slide {
+    right: 18px;
+}
 
 .case-content h3 {
     color: var(--white);
@@ -419,11 +449,20 @@ button:focus {
     margin: 10px 0 40px;
 }
 
+.case-meta i {
+    font-size: 1.8rem;
+    color: var(--sky);
+    margin-bottom: 12px;
+    display: block;
+}
+
+
 .case-meta article {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 22px;
     padding: 24px;
+    text-align: center;
 }
 
 .case-meta h4 {
@@ -509,8 +548,6 @@ button:focus {
     font-weight: 700;
 }
 
-/* Footer Section */
-
 footer {
     text-align: center;
     padding: 26px;
@@ -518,8 +555,6 @@ footer {
     background: rgba(15, 23, 42, 0.55);
     border-top: 1px solid var(--border);
 }
-
-/* Feature Work Section */
 
 .lightbox {
     position: fixed;
